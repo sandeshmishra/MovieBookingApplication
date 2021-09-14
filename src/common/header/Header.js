@@ -1,17 +1,15 @@
-import { render } from "@testing-library/react";
-import { Component } from "react";
 import React from 'react';
 import './Header.css';
-import logo from './logo.svg';
 
-export default class Header extends Component{
+class Header extends React.Component{
     render(){
         return(
-
-                <div className="header">
-                  <img src={logo} className="Header-logo" alt="logo" />
-                </div>
-
-              );
+            <div className="headerCSS">
+            <img src="https://cdn.upgrad.com/uploads/production/286e1f11-1897-4d0c-ab0f-6b2bfc1ce642/logo.svg"></img>
+            </div>
+        )
     }
 }
+
+
+export default Header; 
